@@ -1,5 +1,5 @@
 # Author: Daniel Vazome
-# It can be invoked from CLI or Windows Scheduler
+# It can be launched from CLI or Windows Scheduler
 param (
     [Parameter( Mandatory = $true, HelpMessage = "Parner name, case-insensetive, one word")]
     [string]$Purpose
