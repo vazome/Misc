@@ -1,0 +1,3 @@
+#Disable Windows Hello
+#That's it...
+certutil.exe -deleteHelloContainer
