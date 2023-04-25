@@ -7,5 +7,5 @@
 lesession=( $(leapp session list -x --filter="role=SomethingAdministrator" | awk -F ' ' '{print $1}' | grep -v -E "ID|──" ) )
 for i in $lesession
 do
-  leapp session change-profile --sessionId="$i" --profileId="profileId" #You can get profile ID with "leapp profile list -x"
+  leapp session start --sessionId "$i" --noInteractive  #You can get profile ID with "leapp profile list -x" if required.
 done
